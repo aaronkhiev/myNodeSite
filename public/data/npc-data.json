@@ -1,0 +1,7 @@
+{
+    "npc": [
+        {"name": "Nora", "description": "A village doctor that oversees all things alchemical."},
+        {"name": "Finn", "description": "The local herbalist in charge of a shop within the City of Waves."},
+        {"name": "Spring", "description": "The star spirit with a penchant for mischief and pranks."}
+    ]
+}
