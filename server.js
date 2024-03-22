@@ -27,6 +27,7 @@ http.createServer(function(req, res) {
     var path = req.url.replace(/\/?(?:\?.*)?$/, '').toLowerCase();
 
     switch (path) {
+        // Serving all HTML files
         case '':
             serveStaticFile(res, '/public/index.html', 'text/html');
             break;
@@ -63,6 +64,7 @@ http.createServer(function(req, res) {
             serveStaticFile(res, '/public/spell.html', 'text/html');
             break;
 
+        // Serving CSS files
         case '/css/accord.css':
             serveStaticFile(res, '/public/css/accord.css', 'text/css');
             break;
@@ -103,6 +105,7 @@ http.createServer(function(req, res) {
             serveStaticFile(res, '/public/css/spells.css', 'text/css');
             break;
 
+        // Serving all image assets
         case '/images/404bottom.gif':
             serveStaticFile(res, '/public/images/404bottom.gif', 'image/gif');
             break;
@@ -175,6 +178,7 @@ http.createServer(function(req, res) {
             serveStaticFile(res, '/public/images/verdan.png', 'image/png');
             break;
 
+        // Serving all JS files
         case '/js/jquery-ui-1.13.2.custom/jquery-ui-1.13.2.custom/jquery-ui.js':
             serveStaticFile(res, '/public/js/jquery-ui-1.13.2.custom/jquery-ui-1.13.2.custom/jquery-ui.js', 'text/javascript');
             break;
@@ -211,6 +215,7 @@ http.createServer(function(req, res) {
             serveStaticFile(res, '/public/js/jquery-3.7.1.min.js', 'text/javascript');
             break;
 
+        // Serving AJAX data
         case '/data/spell-jquery.html':
             serveStaticFile(res, '/public/data/spell-jquery.html', 'text/html');
             break;
