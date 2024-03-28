@@ -27,7 +27,7 @@ function makeRequestJ(index) {
         }
     };
     
-    xhr.open('GET', '../../Data/npc-data.json', true);
+    xhr.open('GET', 'data/npc-data.json', true);
     
     xhr.send(null);
 }

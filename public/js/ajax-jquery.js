@@ -1,3 +1,3 @@
 $('#spellComp').on('click', function () {
-    $("#compo").load("../../Data/spell-jquery.html").hide().fadeIn("slow");
+    $("#compo").load("data/spell-jquery.html").hide().fadeIn("slow");
 });

@@ -26,13 +26,13 @@ function changeOp () {
 
 // On each event trigger when clicking the image, the path is sent to the function and run.
 document.getElementById("thistle").addEventListener("click", function() {
-    makeRequest('../../Data/this-data.html');
+    makeRequest('data/this-data.html');
     changeOp();
     document.getElementById("thistle").style.opacity = 1;
 });
 
 document.getElementById("verdan").addEventListener("click", function() {
-    makeRequest('../../Data/ver-data.html');
+    makeRequest('data/ver-data.html');
     changeOp();
     document.getElementById("verdan").style.opacity = 1;
 });

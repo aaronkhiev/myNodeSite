@@ -36,7 +36,7 @@ function changeOpX() {
         }
     };
  
-    xhr.open('GET', '../../Data/spells.xml', true);
+    xhr.open('GET', 'data/spells.xml', true);
     xhr.send();
  }
   
